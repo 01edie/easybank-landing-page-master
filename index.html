@@ -57,7 +57,7 @@
     </div>
     <div class="header-right">
       <button class="request-invite-button">Request Invite</button>
-      <button class="toggle-btn" onclick="showMenu()"><img src="./images/icon-hamburger.svg" alt="button" ></button>
+      <button class="toggle-btn" onclick="showMenu()"><img src="./images/icon-hamburger.svg" alt="button"></button>
       <button class="close-btn" onclick="hideMenu()">x</button>
     </div>
   </header>
@@ -73,9 +73,9 @@
         <img src="./images/bg-intro-desktop.svg" alt="bg-intro-desktop" class="visualization-bg">
         <img src="./images/bg-intro-mobile.svg" alt="bg-intro-desktop" class="visualization-bg-mobile">
         <img src="./images/image-mockups.png" alt="image-mockups" class="visualization-img">
-        
-        
-        
+
+
+
       </div>
     </section>
     <section class="section-2 section">
@@ -116,7 +116,9 @@
           <img src="./images/image-currency.jpg" alt="article-logo" class="article-logo">
           <div class="article-details">
             <p class="writer">By Claire Robinson</p>
-            <a href="#"><h4>Receive money in any currency with no fees</h4></a>
+            <a href="#">
+              <h4>Receive money in any currency with no fees</h4>
+            </a>
             <p>The world is getting smaller and we’re becoming more mobile. So why should you be
               forced to only receive money in a single …</p>
           </div>
@@ -125,7 +127,9 @@
           <img src="/images/image-restaurant.jpg" alt="article-logo" class="article-logo">
           <div class="article-details">
             <p class="writer">By Wilson Hutton</p>
-            <a href="#"><h4>Treat yourself without worrying about money</h4></a>
+            <a href="#">
+              <h4>Treat yourself without worrying about money</h4>
+            </a>
             <p>Our simple budgeting feature allows you to separate out your spending and set
               realistic limits each month. That means you …</p>
           </div>
@@ -134,7 +138,9 @@
           <img src="/images/image-plane.jpg" alt="article-logo" class="article-logo">
           <div class="article-details">
             <p class="writer">By Wilson Hutton</p>
-            <a href="#"><h4>Take your Easybank card wherever you go</h4></a>
+            <a href="#">
+              <h4>Take your Easybank card wherever you go</h4>
+            </a>
             <p>We want you to enjoy your travels. This is why we don’t charge any fees on purchases
               while you’re abroad. We’ll even show you …</p>
           </div>
@@ -143,7 +149,9 @@
           <img src="./images/image-confetti.jpg" alt="article-logo" class="article-logo">
           <div class="article-details">
             <p class="writer">By Claire Robinson</p>
-            <a href="#"><h4>Our invite-only Beta accounts are now live!</h4></a>
+            <a href="#">
+              <h4>Our invite-only Beta accounts are now live!</h4>
+            </a>
             <p>After a lot of hard work by the whole team, we’re excited to launch our closed beta.
               It’s easy to request an invite through the site ...</p>
           </div>
@@ -158,12 +166,12 @@
         <a href="#"><img src="./images/logo-footer.svg" alt="logo" class="logo"></a>
         <div class="social-links">
           <a href=""><img src="/images/icon-facebook.svg" alt="" class="social-link"></a>
-        <a href=""><img src="/images/icon-youtube.svg" alt="" class="social-link"></a>
-        <a href=""><img src="./images/icon-twitter.svg" alt="" class="social-link"></a>
-        <a href=""><img src="./images/icon-pinterest.svg" alt="" class="social-link"></a>
-        <a href=""><img src="./images/icon-instagram.svg" alt="" class="social-link"></a>
-      </div>
+          <a href=""><img src="/images/icon-youtube.svg" alt="" class="social-link"></a>
+          <a href=""><img src="./images/icon-twitter.svg" alt="" class="social-link"></a>
+          <a href=""><img src="./images/icon-pinterest.svg" alt="" class="social-link"></a>
+          <a href=""><img src="./images/icon-instagram.svg" alt="" class="social-link"></a>
         </div>
+      </div>
       <div class="part-2">
         <li><a href="">About Us</a></li>
         <li><a href="">Contact</a></li>
@@ -192,24 +200,23 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
   <script>
-  
     // on over mouse,making visible the underline on header links
-    function uLineVisible(event){
-      event.target.nextElementSibling.style.visibility='visible';
+    function uLineVisible(event) {
+      event.target.nextElementSibling.style.visibility = 'visible';
     }
-     // on mouse out,making hidden the underline on header links
-    function uLineHidden(e){
-      e.target.nextElementSibling.style.visibility='hidden';
+    // on mouse out,making hidden the underline on header links
+    function uLineHidden(e) {
+      e.target.nextElementSibling.style.visibility = 'hidden';
     }
-    const showMenu = ()=>{
-      document.querySelector('.mobile-menu').style.display='flex';
-      document.querySelector('.toggle-btn').style.display='none';
-      document.querySelector('.close-btn').style.display='block';
+    const showMenu = () => {
+      document.querySelector('.mobile-menu').style.display = 'flex';
+      document.querySelector('.toggle-btn').style.display = 'none';
+      document.querySelector('.close-btn').style.display = 'block';
     }
-    const hideMenu = ()=>{
-      document.querySelector('.mobile-menu').style.display='none';
-      document.querySelector('.toggle-btn').style.display='block';
-      document.querySelector('.close-btn').style.display='none';
+    const hideMenu = () => {
+      document.querySelector('.mobile-menu').style.display = 'none';
+      document.querySelector('.toggle-btn').style.display = 'block';
+      document.querySelector('.close-btn').style.display = 'none';
     }
   </script>
 </body>
