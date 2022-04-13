@@ -48,21 +48,34 @@
         <div class="underline-header-link"></div>
       </li>
     </div>
+    <div class="mobile-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Careers</a></li>
+    </div>
     <div class="header-right">
       <button class="request-invite-button">Request Invite</button>
+      <button class="toggle-btn" onclick="showMenu()"><img src="./images/icon-hamburger.svg" alt="button" ></button>
+      <button class="close-btn" onclick="hideMenu()">x</button>
     </div>
   </header>
   <main>
     <section class="section-1 section">
       <div class="content">
         <h1>Next generation digital banking</h1>
-        <p> Take your financial life online. Your Easybank account will be a one-stop-shop
+        <p class="content-info"> Take your financial life online. Your Easybank account will be a one-stop-shop
           for spending, saving, budgeting, investing, and much more.</p>
         <button class="request-invite-button">Request Invite</button>
       </div>
       <div class="visualization">
         <img src="./images/bg-intro-desktop.svg" alt="bg-intro-desktop" class="visualization-bg">
+        <img src="./images/bg-intro-mobile.svg" alt="bg-intro-desktop" class="visualization-bg-mobile">
         <img src="./images/image-mockups.png" alt="image-mockups" class="visualization-img">
+        
+        
+        
       </div>
     </section>
     <section class="section-2 section">
@@ -188,9 +201,16 @@
     function uLineHidden(e){
       e.target.nextElementSibling.style.visibility='hidden';
     }
-    var w = window.innerWidth;
-    var h = window.innerHeight;
-    console.log(w,h);
+    const showMenu = ()=>{
+      document.querySelector('.mobile-menu').style.display='flex';
+      document.querySelector('.toggle-btn').style.display='none';
+      document.querySelector('.close-btn').style.display='block';
+    }
+    const hideMenu = ()=>{
+      document.querySelector('.mobile-menu').style.display='none';
+      document.querySelector('.toggle-btn').style.display='block';
+      document.querySelector('.close-btn').style.display='none';
+    }
   </script>
 </body>
 
