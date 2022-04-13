@@ -49,12 +49,15 @@ p{
 /* project css */
 header{
   height: 5rem;
-  background-color: var(--white);
   display: flex;
   padding: 0 3rem;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  background-color: white;
 }
 .header-middle{
   display: flex;
@@ -149,6 +152,8 @@ header{
 /* header ends here */
 main{
   overflow-x: hidden;
+  position: relative;
+  top: 5rem;
 }
 .section{
  
@@ -297,6 +302,8 @@ footer{
   display: flex;
   justify-content: space-between;
   padding: 3rem 5rem;
+  position: relative;
+  top: 5rem;
 }
 .footer-left{
   display: flex;
