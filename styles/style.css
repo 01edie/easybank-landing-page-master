@@ -256,7 +256,7 @@ main {
   gap: 1.65rem;
   /* flex-wrap: wrap; */
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 
 }
 
@@ -290,7 +290,7 @@ main {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .article {
